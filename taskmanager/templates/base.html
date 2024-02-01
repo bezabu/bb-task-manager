@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -31,7 +32,7 @@
           ></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="">New Task</a></li>
+            <li><a href="{{ url_for('add_task') }}">New Task</a></li>
             <li><a href="{{ url_for('categories') }}">Categories</a></li>
           </ul>
         </div>
@@ -39,7 +40,7 @@
 
       <ul class="sidenav" id="mobile-demo">
         <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="">New Task</a></li>
+        <li><a href="{{ url_for('add_task') }}">New Task</a></li>
         <li><a href="{{ url_for('categories') }}">Categories</a></li>
       </ul>
     </header>
@@ -60,7 +61,8 @@
       </div>
     </footer>
 
+    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <scirpt src="{{ url_for('static', filename='js/script.js') }}"></scirpt>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>

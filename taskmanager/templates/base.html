@@ -25,7 +25,7 @@
     <header>
       <nav class="light-blue darken-1">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Task Manager</a>
+          <a href="{{ url_for('home') }}" class="brand-logo">Task Manager</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="fas fa-bars"></i
           ></a>
@@ -46,15 +46,19 @@
 
     <main class="container">{% block content %} {% endblock %}</main>
 
-<footer class="page-footer blue darken=3">
-    
-    <div class="footer-copyright">
+    <footer class="page-footer blue darken=3">
+      <div class="footer-copyright">
         <div class="container">
-            For educational purposes only
-            <a class="grey-text text-lighten-4 right" href="https://codeinstitute.net" target="_blank">&copy; Code Institute</a>
+          For educational purposes only
+          <a
+            class="grey-text text-lighten-4 right"
+            href="https://codeinstitute.net"
+            target="_blank"
+            >&copy; Code Institute</a
+          >
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <scirpt src="{{ url_for('static', filename='js/script.js') }}"></scirpt>
